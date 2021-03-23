@@ -9,8 +9,8 @@
 
 // alert("R$"+precoReal)
 
-var catchPreco=parseFloat("");
+var catchPreco="";
 function getPrecoDolar () {
-    catchPreco = parseFloat((document.getElementById('precoDolar').value)*5.5.toFixed(2));
-    document.getElementById('precoReal').innerHTML = parseFloat(catchPreco);
+    catchPreco = parseFloat((document.getElementById('precoDolar').value)*5.5).toFixed(2);
+    document.getElementById('precoReal').innerHTML = 'R&dollar;' + parseFloat(catchPreco);
 }
